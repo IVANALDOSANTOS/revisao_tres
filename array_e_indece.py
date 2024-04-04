@@ -24,3 +24,14 @@ imprime_primeiro_e_ultimo_nome(nomes)
 #--Crie uma função que declara um array com 4 nomes
 # diferentes e imprime o primeiro e último nome do array
 
+def imprime_primeiro_e_ultimo_nome(nomes):
+    if len(nomes) < 2:
+        print("O array deve conter pelo menos dois nomes.")
+        return
+
+    print(f"O segundo nome é: {nomes[1]}")
+    print(f"O último nome é: {nomes[2]}")
+
+# Exemplo de uso
+nomes = ["João", "Maria", "Pedro", "Ana"]
+imprime_primeiro_e_ultimo_nome(nomes)
