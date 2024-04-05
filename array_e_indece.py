@@ -35,3 +35,24 @@ def imprime_primeiro_e_ultimo_nome(nomes):
 # Exemplo de uso
 nomes = ["João", "Maria", "Pedro", "Ana"]
 imprime_primeiro_e_ultimo_nome(nomes)
+
+#Crie uma função que pede 3 nomes de alimentos digitado pelo usuário e substitui
+# os elementos do array [“Macarrão”, “Pepino”, “Batata”] 
+#com esses 3 alimentos. Imprima o nome dos alimentos um abaixo do outro.
+
+def atualiza_e_imprime_nomes_de_alimentos():
+    # Declara o array com os nomes de alimentos
+    alimentos = ["Macarrão", "Pepino", "Batata"]
+
+    # Pede ao usuário que digite 3 nomes de alimentos
+    for i in range(3):
+        alimento = input(f"Digite o nome do alimento {i+1}: ")
+        # Substitui os elementos do array com os novos nomes de alimentos
+        alimentos[i] = alimento
+
+    # Imprime o nome dos alimentos um abaixo do outro
+    for alimento in alimentos:
+        print(alimento)
+
+# Chama a função
+atualiza_e_imprime_nomes_de_alimentos()
