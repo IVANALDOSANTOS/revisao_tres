@@ -41,3 +41,16 @@ def print_addition_table(n):
 
 # Chamar a função com o número 2 como argumento
 print_addition_table(2)
+
+#********************************
+#Crie uma função que imprime a tabuada de multiplicação de um número digitado pelo usuário
+
+def print_multiplication_table(n):
+    for i in range(1, 11):
+        print(f"{n} x {i} = {n * i}")
+
+# Obter entrada do usuário
+num = int(input("Digite um número: "))
+
+# Chamar a função com a entrada do usuário
+print_multiplication_table(num)
